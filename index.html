@@ -125,29 +125,37 @@
         data-image-src="public/bg/1.png"
       >
         <div class="container inner text-center">
-          <h3 class="page-title">DANNY LAMTORO</h3>
-          <h4 style="font-family: arial;">
-            Gunadarma University 2019
-          </h4>
-          <p>
-            <strong style="color: orange;"
-              >Jln. Lamtoro RT 004/RW 016, Kel Pamulang Timur,Kec Pamulang, Kota
-              Tangerang Selatan, Banten, 15417.</strong
-            >
-          </p>
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="page-title">DANNY LAMTORO</h3>
+            </div>
+            <div class="col-lg-12">
+              <h4 style="font-family: arial;">
+                Gunadarma University 2019
+              </h4>
+            </div>
+            <div class="col-lg-12">
+              <p>
+                <strong style="color: orange;"
+                  >Jln. Lamtoro RT 004/RW 016, Kel Pamulang Timur,Kec Pamulang,
+                  Kota Tangerang Selatan, Banten, 15417.</strong
+                >
+              </p>
+            </div>
+          </div>
           <!-- <p><i>"jika kita mengerjakan sesuatu yang harusnya dikerjakan BOSS, saat itu juga jabatan kita disetarakan dengan BOSS."</i></p> -->
-          <div class="row" id="thor">
+          <div class="row">
             <div id="1" class="col-lg-12 col-xs-12 text-center">
-              <h3 style="color: white;">TEAMWORKING</h3>
+              <h3 style="color: white;" class="page-title">TEAMWORKING</h3>
             </div>
             <div id="2" class="col-lg-12 col-xs-12 text-center">
-              <h3 style="color: white;">COMMUNICATING</h3>
+              <h3 style="color: white;" class="page-title">COMMUNICATING</h3>
             </div>
             <div id="3" class="col-lg-12 col-xs-12 text-center">
-              <h3 style="color: white;">TIME MANAGEMENT</h3>
+              <h3 style="color: white;" class="page-title">TIME MANAGEMENT</h3>
             </div>
             <div id="4" class="col-lg-12 col-xs-12 text-center">
-              <h3 style="color: white;">MATHEMATICS</h3>
+              <h3 style="color: white;" class="page-title">MATHEMATICS</h3>
             </div>
           </div>
         </div>
@@ -746,13 +754,15 @@
       });
     </script> -->
     <script>
-      $("#2").hide();
-      $("#3").hide();
-      $("#4").hide();
       loop1();
+
       var duration2 = 3000;
 
       function loop1() {
+        $("#1").hide();
+        $("#2").hide();
+        $("#3").hide();
+        $("#4").hide();
         $("#1").fadeIn(duration2, function () {
           $("#1").fadeOut(duration2, function () {
             $("#2").fadeIn(duration2, function () {
