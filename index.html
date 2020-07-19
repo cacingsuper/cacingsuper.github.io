@@ -739,10 +739,25 @@
     <script src="style/js/plugins.js"></script>
     <script src="style/js/scripts.js"></script>
     <script src="style/js/lamtoro.js"></script>
-    <script>
+    <!-- <script>
       $("#thor").ready(function () {
         $(".trip").fadeOut(5000);
+        $(".trip").fadeIn(5000);
       });
+    </script> -->
+    <script>
+      loop1();
+      loop2();
+      loop3();
+      loop4();
+      var duration1 = 2000;
+      var duration2 = 2000;
+
+      function loop1() {
+        $("#1").fadeIn(duration1, function () {
+          $("#1").fadeOut(duration2, loop);
+        });
+      }
     </script>
   </body>
 </html>
